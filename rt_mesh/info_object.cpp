@@ -131,8 +131,7 @@ bool info_object::Init(){
 //        m_sbmeshes[i].mat.specPower = 100.0f;
 
     }
-    RT_HR_T(D3DXCreateTextureFromFile(RT_D3D->GetD3dDevice(),
-                                      "C:/Users/thenthusiast/Documents/blender/wht_tx.bmp", &m_tex));
+    RT_HR_T(D3DXCreateTextureFromFile(RT_D3D->GetD3dDevice(),"wht_tx.bmp", &m_tex));
 
 
     AddFlags(RT_MESH_INIT);

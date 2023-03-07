@@ -71,6 +71,9 @@ add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${CMAKE_COMMAND} -
     ${CMAKE_SOURCE_DIR}/data/stand.dae  ${CMAKE_CURRENT_BINARY_DIR}/stand.dae)
 
 add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy
+    ${CMAKE_SOURCE_DIR}/data/wht_tx.bmp  ${CMAKE_CURRENT_BINARY_DIR}/wht_tx.bmp)
+
+add_custom_command( TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy
     ${CMAKE_SOURCE_DIR}/rabbit.hlsl  ${CMAKE_CURRENT_BINARY_DIR}/rabbit.hlsl)
 
 
